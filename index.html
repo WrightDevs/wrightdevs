@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wright DeV s</title>
+</head>
+
+<style>
+  #move{
+    text-align: center;
+    margin-top: 150px;
+  }
+  
+  #mwrt{                
+    text-align: center;
+    font-size: 25px;
+    font-family:'Lucida Grande';
+    letter-spacing: -1px;
+    animation: beat;
+    animation-duration: 5s;
+    animation-iteration-count: 4
+  }
+  
+
+
+  
+  #down{
+    text-align: center;
+    font-size: 30px;
+    color: green
+  }
+
+  footer{
+        position: absolute;
+        bottom: 0px;
+        font-size: 12px;
+        width: 1270px;
+        overflow: hidden;
+    }
+  
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    a:hover{
+        color: rgba(0, 0, 0, 0.717);
+    }
+</style>
+
+<body id="body">
+  
+  <div id="move">
+    <img src="/Images/mcab.png" alt="" id="mcab" height="150px">
+  </div>
+  
+  <p id="mwrt">W</p>
+  
+<div id="copy">
+  <footer><p>&copy;Copyright,<a href="#">Wright Devs</a></p></footer>
+</div>
+</body>
+
+<script>
+  let num = 1
+  let dow = 10
+  let wrt = 1
+  let nme = document.getElementById("mwrt")
+  
+  function Wrt(){
+    wrt++
+    if (wrt >= 1.8) {
+      nme.innerHTML= "WR"
+    }
+    
+    if (wrt >= 2.2) {
+      nme.innerHTML = "WRI"
+    }
+    
+    if (wrt >= 3.6) {
+      nme.innerHTML = "WRIGH"
+    }
+    
+    if (wrt >= 4.3) {
+      nme.innerHTML = "WRIGHT"
+    }
+    
+    if (wrt >= 5.5) {
+      nme.innerHTML = "WRIGHT D"
+    }
+    
+    if (wrt >= 6.2) {
+      nme.innerHTML = "WRIGHT DE"
+    }
+    
+    if (wrt >= 7.5) {
+      nme.innerHTML = "WRIGHT DEV"
+    }
+    
+    if (wrt >= 8.1) {
+      nme.innerHTML = "WRIGHT DEVs"
+    }
+    
+    // if (wrt >= 9.6) {
+    //   nme.innerHTML = "MEDIA CABIN"
+    // }
+    
+    // if (wrt >= 10.2) {
+    //   nme.innerHTML = "MEDIA CABINE"
+    // }
+    
+    // if (wrt >= 20) {
+    //   nme.innerHTML = "MEDIA CABINET "
+    // }
+  }
+  function Count(){
+    num++
+    if(num >= 8){
+      
+      window.location.href="homepage.html"
+    }
+    
+  }
+  
+  setInterval(Count , 1000)
+  setInterval(Wrt , 230)
+  
+  Theme = localStorage.getItem("theme")
+  
+  if(Theme == "Dark"){
+    body = document.getElementById("body")
+    body.style.background = "#212227"
+    body.style.color = "white"
+  }
+  
+  else{
+    body = document.getElementById("body")
+    body.style.background = "white"
+    body.style.color = "black"
+  }
+  
+</script>
+
+</html>
