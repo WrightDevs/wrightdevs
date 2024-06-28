@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+</head>
+<style>
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+    padding: 20px;
+    background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+CiAgPHJlY3Qgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIHN0eWxlPSJmaWxsOmJsdWU7Ii8+CiAgPGcgdHJhbnNmb3JtPSJyb3RhdGUoMjAgMjAgMjApIj4KICAgIDxwYXRoIGQ9Ik0wIDBoMTB2MTBIMHpNMCAyMHYxMEgwVjB6bTAgMTBoLTEwdjEwSDB6IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIC8+Cjwvc3ZnPgo=') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    text-align: center;
+    font-family: Times;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    font-family: 'Times New Roman';
+    text-align: center;
+    width: 45%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+}
+.project:hover{
+    transform: translateY(-10px);
+}
+.project h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: #666;
+}
+
+.project-details a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.project-details a:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    /* text-align: center; */
+    margin-top: 20px;
+    padding: 10px;
+    left: 0px;
+    /* background-color: #333; */
+    color: #010101;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Our Projects</h1>
+    </header>
+    <main>
+        <section class="project">
+            <h2>Project 1</h2>
+            <div class="project-details">
+                <img src="icons/KGB.png" alt="Project 1 Thumbnail">
+                <p>KhaysGistBlog(KGB) is a simple blog with all the basic features required for a blog </p>
+                <a href="https://www.github.io/KhaysGistBlog.com">View Project</a>
+            </div>
+        </section>
+        <section class="project">
+            <h2>Project 2</h2>
+            <div class="project-details">
+                <img src="icons/ct.png" alt="Project 2 Thumbnail">
+                <p>This is a landing page used for an affiliate program and to gain engagements and provides a way of contacting the owner of the page</p>
+                <a href="https://www.crucialteemasterclass.carrd.co">View Project</a>
+            </div>
+        </section>
+        <!-- Add more project sections as needed -->
+    </main>
+    <footer>
+        <p>&copy; 2024 Wright Devs</p>
+    </footer>
+</body>
+</html>

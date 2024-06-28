@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAwIiBoZWlnaHQ9IjEwMDAiIHZpZXdCb3g9IjAgMCAxMDAwIDEwMDAiPgo8ZGVmcz4KPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkMSIgcj0iNzUiIGN4PSIwJSIgY3k9IjAlIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuNzUgMC4zNiAtMC4zNiAwLjc1IDAuNTUgMC41NSkiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZmY4MDgwIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZGRjI2NCIvPgo8L3JhZGlhbEdyYWRpZW50Pgo8cmFkaWFsR3JhZGllbnQgaWQ9ImdyYWQyIiByPSI3NSIgY3g9IjEwMCUiIGN5PSIxMDAlIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuNzUgLTAuMzYgMC4zNiAwLjc1IC0wLjU1IC0wLjU1KSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMyYjZjZmYiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNzI3MmZmIi8+CjwvcmFkaWFsR3JhZGllbnQ+CjwvZGVmcz4KPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkMSkiIC8+CjxjaXJjbGUgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNTAlIiBmaWxsPSJ1cmwoI2dyYWQyKSIgLz4KPC9zdmc+Cg==') no-repeat center center fixed; */
+            background-size: cover;
+        }
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2.5em;
+            color: #333;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .box {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            overflow: hidden;
+            white-space: normal;
+            border-radius: 9px;
+            padding: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            background: #fff;
+            transition: transform 0.9s;
+        }
+        .box:hover {
+            transform: translatey(-20px);
+        }
+        img {
+            border: 3.5px solid #000;
+            border-radius: 50%;
+            background: ghostwhite;
+            width: 70px;
+            height: 70px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        h5 {
+            text-align: center;
+            margin-top: -15px;
+            opacity: 0.7;
+            font-family: cursive;
+        }
+        span {
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            font-size: 1em;
+            display: block;
+            text-align: center;
+            margin: 10px 0;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #000000;
+            font-family: 'Times New Roman';
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: ease-out 2s;
+        }
+        a:hover {
+            color: #010101b7;
+            font-family: 'Times New Roman';
+            font-size: 0.9em;
+        }
+        @media screen and (min-width: 600px) {
+            .box {
+                display: inline-block;
+                vertical-align: top;
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+     <div class="background"> 
+        <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">  
+          Circuits 
+          <circle cx="50" cy="50" r="10" fill="#ccc"/>
+          <circle cx="100" cy="50" r="10" fill="#cc"/>
+          <circle cx="150" cy="50" r="10" fill="#ccc"/>
+          <circle cx="50" cy="100" r="10" fill="#cc"/>
+          <circle cx="100" cy="100" r="10" fill="#ccc"/>
+          <circle cx="150" cy="100" r="10" fill="#cc"/>
+          <circle cx="50" cy="150" r="10" fill="#ccc"/>
+          <circle cx="100" cy="150" r="10" fill="#cc"/>
+          <circle cx="150" cy="150" r="10" fill="#ccc"/>
+         </svg>
+      </div>
+    <h1>Clients Say</h1>
+    <div class="container">
+        <div class="box">
+            <img src="icons/man.png" alt="Client photo">
+            <h5>.jokerdc.</h5>
+            <span>Nice company, they take reviews seriously and deliver what you ordered within the given time.</span>
+        </div>
+        <div class="box">
+            <img src="icons/man.png" alt="Client photo">
+            <h5>Nobledegreat</h5>
+            <span>They are reliable and have all the necessary accreditations.</span>
+        </div>
+        <div class="box">
+            <img src="icons/woman.png" alt="Client photo">
+            <h5>_drealher_</h5>
+            <span>One good thing about the company is that after the web development, they help with the management for up to two weeks after the web hosting. They are the full package.</span>
+        </div>
+        <div class="box">
+            <img src="icons/woman.png" alt="Client photo">
+            <h5>tee_money4</h5>
+            <span>WRIGHT DEVs promised to be done with my landing page in one week but it's been 2 weeks now and no website.</span>
+        </div>
+        <div class="box">
+            <img src="icons/man.png" alt="Client photo">
+            <h5>george_perfect</h5>
+            <span>They have a bad customer service system and take forever to reply to complaints. They also have a bad UI; what else could they offer if they can't create a good website for themselves?</span>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Copyright, <a href="#">WRIGHT DEVs</a></p>
+    </footer>
+</body>
+</html>
